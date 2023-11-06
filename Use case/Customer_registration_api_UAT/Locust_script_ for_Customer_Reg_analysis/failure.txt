@@ -1,0 +1,6 @@
+{"userID": "f9e58ade-40fa-4e34-8d03-9c541b5b8444", "eventCount": 31, "responseData": "{\"message\": \"Internal server error\"}", "responseStatus": 500, "createdTimeStamp": "2023-11-02T16:08:06.826345"}
+{"userID": "e8125bab-0284-496c-a23b-ccc64dfe5414", "eventCount": 33, "responseData": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n", "responseStatus": 502, "createdTimeStamp": "2023-11-02T16:08:13.981280"}
+{"userID": "03f6ace8-77ee-4d3a-b788-10856edccfd9", "eventCount": 240, "responseData": "{\"message\": \"Internal server error\"}", "responseStatus": 500, "createdTimeStamp": "2023-11-02T16:43:23.847625"}
+{"userID": "4bc4b99f-d337-46eb-807f-49133c840139", "eventCount": 275, "responseData": "{\"message\": \"Internal server error\"}", "responseStatus": 500, "createdTimeStamp": "2023-11-02T16:44:23.018346"}
+{"userID": "5b7b45cc-beb8-4e84-a14e-09de2bd27cdf", "eventCount": 253, "responseData": "{\"message\": \"Internal server error\"}", "responseStatus": 500, "createdTimeStamp": "2023-11-02T16:45:21.800920"}
+{"userID": "e72e84eb-598c-487a-b26e-0c4b7685d7ad", "eventCount": 125, "responseData": "{\"message\": \"Internal server error\"}", "responseStatus": 500, "createdTimeStamp": "2023-11-02T17:08:21.367678"}

@@ -1,0 +1,8 @@
+{"userID": "a8018a55-2095-49a2-8e5b-b295a5e74a6f", "eventCount": 1, "responseData": "<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</body>\r\n</html>\r\n", "responseStatus": 504}
+{"userID": "3b55b038-c4f4-4aab-a3a1-73da6dd78349", "eventCount": 1, "responseData": "{\"message\":\"Error occurred while validating schema 100 is not of type 'string'\"}", "responseStatus": 400}
+{"userID": "3b55b038-c4f4-4aab-a3a1-73da6dd78349", "eventCount": 2, "responseData": "{\"message\":\"Error occurred while validating schema 100 is not of type 'string'\"}", "responseStatus": 400}
+{"userID": "3b55b038-c4f4-4aab-a3a1-73da6dd78349", "eventCount": 3, "responseData": "{\"message\":\"Error occurred while validating schema 100 is not of type 'string'\"}", "responseStatus": 400}
+{"userID": "3b55b038-c4f4-4aab-a3a1-73da6dd78349", "eventCount": 4, "responseData": "{\"message\":\"Error occurred while validating schema 100 is not of type 'string'\"}", "responseStatus": 400}
+{"userID": "3b55b038-c4f4-4aab-a3a1-73da6dd78349", "eventCount": 5, "responseData": "{\"message\":\"Error occurred while validating schema 100 is not of type 'string'\"}", "responseStatus": 400}
+{"userID": "3b55b038-c4f4-4aab-a3a1-73da6dd78349", "eventCount": 6, "responseData": "{\"message\":\"Error occurred while validating schema 100 is not of type 'string'\"}", "responseStatus": 400}
+{"userID": "3b55b038-c4f4-4aab-a3a1-73da6dd78349", "eventCount": 7, "responseData": "{\"message\":\"Error occurred while validating schema 100 is not of type 'string'\"}", "responseStatus": 400}

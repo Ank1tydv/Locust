@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "a44c0557-4ae0-4dbf-8785-df60f97f0ac4",
+		"name": "sms_analysis_api uat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get access token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1b637i42gdbiqr98vr5qfq4st14i3ipeq9lb5f4tm8rk5cnugttg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "5msa33ggkis4jpqa8kocgs5cp8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic NXE4NmlxcGNmOGkzbGdiZ2kwNm1mNzA5Mzg6MWtoaTk5YTRubHA4NHFsZmduM2s1b3NiYzY1ajU4OTE5NWFoMmY3OXBvZ2p1amFiamhvaA=="
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "5msa33ggkis4jpqa8kocgs5cp8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://user-pool-streaming-platform-uat.auth.ap-south-1.amazoncognito.com/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"user-pool-streaming-platform-uat",
+						"auth",
+						"ap-south-1",
+						"amazoncognito",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Event API Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1cTg2aXFwY2Y4aTNsZ2JnaTA2bWY3MDkzOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY4Nzc3NTc0MywiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2ODc3NzkzNDMsImlhdCI6MTY4Nzc3NTc0MywidmVyc2lvbiI6MiwianRpIjoiYzJiMzRlYTktNGM4OS00NWUwLWI0MDItMmViYjRlYjAwZGU3IiwiY2xpZW50X2lkIjoiNXE4NmlxcGNmOGkzbGdiZ2kwNm1mNzA5MzgifQ.llw9cwlWCQvOYEqm_aRTEqw7lhlN27gBYK4kRAQZ_fS8Ek7ZLcsA9A_MPJyYENpRv6MiYylv88yvOtTuKAnq9FW1ekQajZrrYp3EZ62qOJ4lrfumwNLtPnqr7EIbQ4_IuLDsTCq9GuyWOoqfbonJm0RUyv17gBsiJ1iFH6rHrZ9A5SATbl26xwwNULSyd3xRhZxPvQRs-ZRgKBxV-CctlNBZidse_5Su4eIY7xS0eh3iTlvrmy3ndfXRRxRDd6N5kJTTjCpZnEP3_LluPGYpPGjMR1SCm39XtyNzJUTDlenCyyDCALgx47DMj4REPYrG7Ak-IahxC0sqidwGnLhpRw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"property1\": \"Large_payload\",\r\n  \"property2\": 42,\r\n  \"property3\": true,\r\n  \"property4\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [1, 2, 3]\r\n  },\r\n  \"property5\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 1\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 2\r\n    }\r\n  ],\r\n  \"property6\": \"example\",\r\n  \"property7\": 3.14,\r\n  \"property8\": false,\r\n  \"property9\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [4, 5, 6]\r\n  },\r\n  \"property10\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 3\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 4\r\n    }\r\n  ],\r\n  \"property11\": \"example\",\r\n  \"property12\": 99,\r\n  \"property13\": true,\r\n  \"property14\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [7, 8, 9]\r\n  },\r\n  \"property15\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 5\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 6\r\n    }\r\n  ],\r\n  \"property16\": \"example\",\r\n  \"property17\": 2.71828,\r\n  \"property18\": true,\r\n  \"property19\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [10, 11, 12]\r\n  },\r\n  \"property20\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 7\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 8\r\n    }\r\n  ],\r\n  \"property21\": \"example\",\r\n  \"property22\": 123,\r\n  \"property23\": false,\r\n  \"property24\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [13, 14, 15]\r\n  },\r\n  \"property25\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 9\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 10\r\n    }\r\n  ],\r\n  \"property26\": \"example\",\r\n  \"property27\": 3.14159,\r\n  \"property28\": true,\r\n  \"property29\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [16, 17, 18]\r\n  },\r\n  \"property30\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 11\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 12\r\n    }\r\n  ],\r\n  \"property31\": \"example\",\r\n  \"property32\": 456,\r\n  \"property33\": false,\r\n  \"property34\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [19, 20, 21]\r\n  },\r\n  \"property35\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 13\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 14\r\n    }\r\n  ],\r\n  \"property36\": \"example\",\r\n  \"property37\": 2.99792,\r\n  \"property38\": true,\r\n  \"property39\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [22, 23, 24]\r\n  },\r\n  \"property40\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 15\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 16\r\n    }\r\n  ],\r\n  \"property41\": \"example\",\r\n  \"property42\": 789,\r\n  \"property43\": false,\r\n  \"property44\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": [25, 26, 27]\r\n  },\r\n  \"property45\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 17\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 18\r\n    }\r\n  ],\r\n  \"property46\": \"example\",\r\n  \"property47\": 1.61803,\r\n  \"property48\": true,\r\n  \"property49\": {\r\n    \"subproperty1\": \"subexample\",\r\n    \"subproperty2\": 12323\r\n  },\r\n  \"property50\": [\r\n    {\r\n      \"subproperty1\": \"subexample1\",\r\n      \"subproperty2\": 19\r\n    },\r\n    {\r\n      \"subproperty1\": \"subexample2\",\r\n      \"subproperty2\": 20\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://aybqpjl4r8.execute-api.ap-south-1.amazonaws.com/uat/streaming/events/v1/event/nye/sms",
+					"protocol": "https",
+					"host": [
+						"aybqpjl4r8",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"streaming",
+						"events",
+						"v1",
+						"event",
+						"nye",
+						"sms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get data of 3 months from current date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/sms_analytics/31d3e964-c807-4a2b-93e0-46720267ccef",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"sms_analytics",
+						"31d3e964-c807-4a2b-93e0-46720267ccef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get data from and to date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NDY4NDc0MywiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTQ2ODUwNDMsImlhdCI6MTY5NDY4NDc0MywidmVyc2lvbiI6MiwianRpIjoiOTljOTY5NmQtMmM0ZS00OTYyLWE4YzQtOWRiNmUyZDY4Y2NkIiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.VuzFTo_xzCeStMD-S9NV2c8DNWtGqMuNL6nWNJMkC8cH1w-7G3uuXV1zCYk_4UUWccudRiEbDQz0DGi-ra-sNFB_k5oAAbWbH60Ofj4NBeTyKgShpRrPKxjXz8dC4_pN7oJEOFkm7oda1uWiDA8GZpKGFN3DXjcI4taL13yhMzXzbbUDgJ1g-bnQt2FocqyjphD0Tc_3SHsvDSS6o2dytteOzrq2uFcahWzmn4sPXRGytehdg3hAlm1B4dL--kERp9YPMqVt_7aJDkbo6FxH8GywgQOZwKVAo7Y8YsgdcQgHapJS_g468JwzPeArvxBbhzCqoIx2vXhbSadD_AoEcQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/sms_analytics/31d3e964-c807-4a2b-93e0-46720267ccef/2023-06-16/2023-09-08",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"sms_analytics",
+						"31d3e964-c807-4a2b-93e0-46720267ccef",
+						"2023-06-16",
+						"2023-09-08"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health api",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NDY4NDc0MywiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTQ2ODUwNDMsImlhdCI6MTY5NDY4NDc0MywidmVyc2lvbiI6MiwianRpIjoiOTljOTY5NmQtMmM0ZS00OTYyLWE4YzQtOWRiNmUyZDY4Y2NkIiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.VuzFTo_xzCeStMD-S9NV2c8DNWtGqMuNL6nWNJMkC8cH1w-7G3uuXV1zCYk_4UUWccudRiEbDQz0DGi-ra-sNFB_k5oAAbWbH60Ofj4NBeTyKgShpRrPKxjXz8dC4_pN7oJEOFkm7oda1uWiDA8GZpKGFN3DXjcI4taL13yhMzXzbbUDgJ1g-bnQt2FocqyjphD0Tc_3SHsvDSS6o2dytteOzrq2uFcahWzmn4sPXRGytehdg3hAlm1B4dL--kERp9YPMqVt_7aJDkbo6FxH8GywgQOZwKVAo7Y8YsgdcQgHapJS_g468JwzPeArvxBbhzCqoIx2vXhbSadD_AoEcQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/sms_analytics/health",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"sms_analytics",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

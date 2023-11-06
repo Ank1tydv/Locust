@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "24ad417e-ab7a-41f3-804c-6d89a40b2325",
+		"name": "customer_registration_api UAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NTEyMjE5MSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTUxMjI0OTEsImlhdCI6MTY5NTEyMjE5MSwidmVyc2lvbiI6MiwianRpIjoiNjZjODI3ZWEtZmJhNy00YTY4LWIzOGItOTQ5MmUyYzk4Mjg0IiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.qz4_PSxKtsb3VO2N5xWTbYVJHlC9EKfNqUD3N-Abc__ifNM1UiDTaJ0gScSo8c7mNYQZGm6p7q9Gs4i_vIZW0ckdldPzeCj2DY7RlkvtkRgb0MSgFvg7ypEub-b0Fgd8QSVy7KpnpTYFaZV9y29mbufmfujCAPyise-dd9CTQduhNowlIlcYfNMtVOEznRq3eiBGGiStBEIUDtKuBY_hQMLYN_pvlcz4-VI6tdx8XZnYWdk4N5nAF3w5bWsIXr4Dgt4Ahd6oC-tk7Pf31zPwXOhe5hYAdlX87-ilP9x37gkp-kDAMjg6WmXFNW5htuwdM0mAI58RY7ls24cy7an93g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/registration",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all count",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NTEyMjE5MSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTUxMjI0OTEsImlhdCI6MTY5NTEyMjE5MSwidmVyc2lvbiI6MiwianRpIjoiNjZjODI3ZWEtZmJhNy00YTY4LWIzOGItOTQ5MmUyYzk4Mjg0IiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.qz4_PSxKtsb3VO2N5xWTbYVJHlC9EKfNqUD3N-Abc__ifNM1UiDTaJ0gScSo8c7mNYQZGm6p7q9Gs4i_vIZW0ckdldPzeCj2DY7RlkvtkRgb0MSgFvg7ypEub-b0Fgd8QSVy7KpnpTYFaZV9y29mbufmfujCAPyise-dd9CTQduhNowlIlcYfNMtVOEznRq3eiBGGiStBEIUDtKuBY_hQMLYN_pvlcz4-VI6tdx8XZnYWdk4N5nAF3w5bWsIXr4Dgt4Ahd6oC-tk7Pf31zPwXOhe5hYAdlX87-ilP9x37gkp-kDAMjg6WmXFNW5htuwdM0mAI58RY7ls24cy7an93g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/registration/count",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"registration",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all count Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NTExNTIxMSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTUxMTU1MTEsImlhdCI6MTY5NTExNTIxMSwidmVyc2lvbiI6MiwianRpIjoiYTNmNDY3M2ItZThmNS00NmVhLTlmNzktMWNlM2YyYTc3ZWNjIiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.HwjxGlR6n2jhMazH2Qs4kaiBbkUhVk0SrY7CqTuJB6kDUiznp2VDka9PW8kQZoqiB1gfWUwUrO3aoLwW2NiywN4xqbR9UVjBNMJczJSm7ZWJ5lfBxPHx2Pl6LMFgGOHAvRfe5H_-2H_wcSaj3hwj0xZmSM27eV_SfsXgQpu8ER7BTy8xZf7NOibFlkY4TsCd957CDKKYI22wD9A35yMzVbbH1dFpR9araiWU60ha31jClzZuQRc4cH2cOvuHuCJuMsRgCsdDSWvxBfaMv9MuIKNMi5Sj9KivLJuEEIVxA3wNj2TAj9lkOCd6a6Csz7bZLz0W2U8NtoupX6A2E1eEiw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/registration/count",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"registration",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all details for a date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NTExNTM1MywiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTUxMTU2NTMsImlhdCI6MTY5NTExNTM1MywidmVyc2lvbiI6MiwianRpIjoiNTFkMGEwZDMtOGUxNy00YTEyLWJjNjYtZjFiNDgwMTc3NjIzIiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.EGvdcS1oEaFDpDy5kN-EBPFpkFOs6fnjG0TKf0cuLoGFcucaVczalIfZP0N1VcdS88XltlXYNCOrFBa2BjPm3askpP5Y05-XgQTIM2nrB3XVk7KHq9LoYige9d_7mBJ-90AftZXSgmJBN-PpaEmJpariFDp0YWhtGdkyK1QFU6jt-yPbdc0kUdP3m6Coz7GUyY6u62jmROSxubRLrak9BJe-OK-CZJKUvWQd06UzpkKoKFDpdEBiuFSmJpWGRZtp53VtwKv-Me7asepWzo1ACw5j6Ytkr7rO7nlSm0VYDt4Z1UrpKImLvRi9ogN7sn_aWsXv3yAL-Vb3nI5TQrG2Rw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/registration/2023-07-27",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"registration",
+						"2023-07-27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get count for a date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NTExNTIxMSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTUxMTU1MTEsImlhdCI6MTY5NTExNTIxMSwidmVyc2lvbiI6MiwianRpIjoiYTNmNDY3M2ItZThmNS00NmVhLTlmNzktMWNlM2YyYTc3ZWNjIiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.HwjxGlR6n2jhMazH2Qs4kaiBbkUhVk0SrY7CqTuJB6kDUiznp2VDka9PW8kQZoqiB1gfWUwUrO3aoLwW2NiywN4xqbR9UVjBNMJczJSm7ZWJ5lfBxPHx2Pl6LMFgGOHAvRfe5H_-2H_wcSaj3hwj0xZmSM27eV_SfsXgQpu8ER7BTy8xZf7NOibFlkY4TsCd957CDKKYI22wD9A35yMzVbbH1dFpR9araiWU60ha31jClzZuQRc4cH2cOvuHuCJuMsRgCsdDSWvxBfaMv9MuIKNMi5Sj9KivLJuEEIVxA3wNj2TAj9lkOCd6a6Csz7bZLz0W2U8NtoupX6A2E1eEiw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/registration/count/2023-07-27",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"registration",
+						"count",
+						"2023-07-27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get access token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1b637i42gdbiqr98vr5qfq4st14i3ipeq9lb5f4tm8rk5cnugttg",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "5msa33ggkis4jpqa8kocgs5cp8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic NXE4NmlxcGNmOGkzbGdiZ2kwNm1mNzA5Mzg6MWtoaTk5YTRubHA4NHFsZmduM2s1b3NiYzY1ajU4OTE5NWFoMmY3OXBvZ2p1amFiamhvaA=="
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "5msa33ggkis4jpqa8kocgs5cp8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://user-pool-streaming-platform-uat.auth.ap-south-1.amazoncognito.com/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"user-pool-streaming-platform-uat",
+						"auth",
+						"ap-south-1",
+						"amazoncognito",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all details for date range",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NTExNTIxMSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTUxMTU1MTEsImlhdCI6MTY5NTExNTIxMSwidmVyc2lvbiI6MiwianRpIjoiYTNmNDY3M2ItZThmNS00NmVhLTlmNzktMWNlM2YyYTc3ZWNjIiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.HwjxGlR6n2jhMazH2Qs4kaiBbkUhVk0SrY7CqTuJB6kDUiznp2VDka9PW8kQZoqiB1gfWUwUrO3aoLwW2NiywN4xqbR9UVjBNMJczJSm7ZWJ5lfBxPHx2Pl6LMFgGOHAvRfe5H_-2H_wcSaj3hwj0xZmSM27eV_SfsXgQpu8ER7BTy8xZf7NOibFlkY4TsCd957CDKKYI22wD9A35yMzVbbH1dFpR9araiWU60ha31jClzZuQRc4cH2cOvuHuCJuMsRgCsdDSWvxBfaMv9MuIKNMi5Sj9KivLJuEEIVxA3wNj2TAj9lkOCd6a6Csz7bZLz0W2U8NtoupX6A2E1eEiw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/registration/2023-07-07/2023-07-27",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"registration",
+						"2023-07-07",
+						"2023-07-27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get count for date range",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NTExNTIxMSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTUxMTU1MTEsImlhdCI6MTY5NTExNTIxMSwidmVyc2lvbiI6MiwianRpIjoiYTNmNDY3M2ItZThmNS00NmVhLTlmNzktMWNlM2YyYTc3ZWNjIiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.HwjxGlR6n2jhMazH2Qs4kaiBbkUhVk0SrY7CqTuJB6kDUiznp2VDka9PW8kQZoqiB1gfWUwUrO3aoLwW2NiywN4xqbR9UVjBNMJczJSm7ZWJ5lfBxPHx2Pl6LMFgGOHAvRfe5H_-2H_wcSaj3hwj0xZmSM27eV_SfsXgQpu8ER7BTy8xZf7NOibFlkY4TsCd957CDKKYI22wD9A35yMzVbbH1dFpR9araiWU60ha31jClzZuQRc4cH2cOvuHuCJuMsRgCsdDSWvxBfaMv9MuIKNMi5Sj9KivLJuEEIVxA3wNj2TAj9lkOCd6a6Csz7bZLz0W2U8NtoupX6A2E1eEiw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/registration/count/2023-07-07/2023-07-17",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"registration",
+						"count",
+						"2023-07-07",
+						"2023-07-17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health api",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJqWXdqOXRZQU0ybksweUJBaHJ0Zlwvc3B5OTdMVTZ3cjI1XC90cWZNVlJqN1E9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1bXNhMzNnZ2tpczRqcHFhOGtvY2dzNWNwOCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2xpZW50c1wvbm90aGluZyIsImF1dGhfdGltZSI6MTY5NTExNTIxMSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9CcFVsUlZiSDYiLCJleHAiOjE2OTUxMTU1MTEsImlhdCI6MTY5NTExNTIxMSwidmVyc2lvbiI6MiwianRpIjoiYTNmNDY3M2ItZThmNS00NmVhLTlmNzktMWNlM2YyYTc3ZWNjIiwiY2xpZW50X2lkIjoiNW1zYTMzZ2draXM0anBxYThrb2NnczVjcDgifQ.HwjxGlR6n2jhMazH2Qs4kaiBbkUhVk0SrY7CqTuJB6kDUiznp2VDka9PW8kQZoqiB1gfWUwUrO3aoLwW2NiywN4xqbR9UVjBNMJczJSm7ZWJ5lfBxPHx2Pl6LMFgGOHAvRfe5H_-2H_wcSaj3hwj0xZmSM27eV_SfsXgQpu8ER7BTy8xZf7NOibFlkY4TsCd957CDKKYI22wD9A35yMzVbbH1dFpR9araiWU60ha31jClzZuQRc4cH2cOvuHuCJuMsRgCsdDSWvxBfaMv9MuIKNMi5Sj9KivLJuEEIVxA3wNj2TAj9lkOCd6a6Csz7bZLz0W2U8NtoupX6A2E1eEiw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ewxkjiiipb.execute-api.ap-south-1.amazonaws.com/uat/registration/health",
+					"protocol": "https",
+					"host": [
+						"ewxkjiiipb",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"uat",
+						"registration",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
